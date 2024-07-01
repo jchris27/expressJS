@@ -49,6 +49,7 @@ const three = (req, res) => {
   res.send('Finished');
 };
 
+// accepts an array of routes
 app.get('/chain(.html)?', [one, two, three])
 
 // custom 404 file
